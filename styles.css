@@ -1,4 +1,3 @@
-/* ====== RESET BÁSICO ====== */
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +13,9 @@ body {
   background-color: #f7f7f7;
   color: #2c2c2c;
   line-height: 1.6;
-  padding-top: 80px; /* espaço para o menu fixo */
+  padding-top: 80px;
 }
 
-/* ====== MENU FIXO ====== */
 header {
   width: 100%;
   background-color: #222;
@@ -50,7 +48,6 @@ nav a:hover {
   color: #4fb1ff;
 }
 
-/* ====== CONTEÚDO PRINCIPAL ====== */
 main {
   max-width: 900px;
   margin: auto;
@@ -69,12 +66,10 @@ li {
   margin-bottom: 10px;
 }
 
-/* ====== LISTAS ====== */
 ul li {
   margin-left: 20px;
 }
 
-/* ====== FORMULÁRIO DE CONTATO ====== */
 form {
   display: flex;
   flex-direction: column;
@@ -113,7 +108,6 @@ button:hover {
   background-color: #0059b8;
 }
 
-/* ====== RODAPÉ QUANDO TIVER ====== */
 footer {
   text-align: center;
   padding: 20px;
@@ -121,7 +115,6 @@ footer {
   color: #777;
 }
 
-/* ====== RESPONSIVIDADE (CELULAR) ====== */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
