@@ -1,0 +1,142 @@
+/* ====== RESET BÁSICO ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding-top: 80px; /* espaço para o menu fixo */
+}
+
+/* ====== MENU FIXO ====== */
+header {
+  width: 100%;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px 0;
+  display: block;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4fb1ff;
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #222;
+}
+
+p,
+li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* ====== LISTAS ====== */
+ul li {
+  margin-left: 20px;
+}
+
+/* ====== FORMULÁRIO DE CONTATO ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: #0059b8;
+}
+
+/* ====== RODAPÉ QUANDO TIVER ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #777;
+}
+
+/* ====== RESPONSIVIDADE (CELULAR) ====== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
